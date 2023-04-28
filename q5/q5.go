@@ -15,6 +15,9 @@ package q5
 //Ajude Pedro a lidar com esta tarefa fácil.
 
 func ProcessString(s string) string {
-	// Seu código aqui
+	var vogal string = "A", "E", "I", "O", "U"
+	for i := 0; i < len(string(s)); i++ {
+
+	}
 	return ""
 }
