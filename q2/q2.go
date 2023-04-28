@@ -17,7 +17,15 @@ func ProblemsSolved(answers [][3]bool) int {
 
 	for _, linha := range answers {
 		certos := 0
+		for _, amigo := range linha {
+			if amigo {
+				certos++
+			}
+		}
+		if certos >= 2 {
+			resolvidos++
+		}
 	}
 
-	return 0
+	return resolvidos
 }
